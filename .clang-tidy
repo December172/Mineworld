@@ -1,0 +1,7 @@
+# .clang-tidy
+Checks: '*,-clang-diagnostic-*,performance-*,readability-*,cppcoreguidelines-*'
+
+# 指定要检查的文件路径模式
+CheckOptions:
+  - key: HeaderFilterRegex
+    value: '^(src)/.*'
